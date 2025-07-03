@@ -15,8 +15,6 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-const printerName = 'XP-80C';
-
 class _MyAppState extends State<MyApp> {
   List<String> printerNameList = [];
   bool isLoading = false;
