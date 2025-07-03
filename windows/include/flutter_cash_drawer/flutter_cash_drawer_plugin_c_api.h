@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-FLUTTER_PLUGIN_EXPORT void OpenDrawerPluginCApiRegisterWithRegistrar(
+FLUTTER_PLUGIN_EXPORT void FlutterCashDrawerPluginCApiRegisterWithRegistrar(
     FlutterDesktopPluginRegistrarRef registrar);
 
 #if defined(__cplusplus)

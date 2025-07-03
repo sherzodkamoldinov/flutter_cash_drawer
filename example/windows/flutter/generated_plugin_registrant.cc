@@ -9,6 +9,6 @@
 #include <flutter_cash_drawer/flutter_cash_drawer_plugin_c_api.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
-  OpenDrawerPluginCApiRegisterWithRegistrar(
+  FlutterCashDrawerPluginCApiRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("FlutterCashDrawerPluginCApi"));
 }

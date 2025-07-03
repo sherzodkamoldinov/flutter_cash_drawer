@@ -4,9 +4,9 @@
 
 #include "flutter_cash_drawer_plugin.h"
 
-void OpenDrawerPluginCApiRegisterWithRegistrar(
+void FlutterCashDrawerPluginCApiRegisterWithRegistrar(
     FlutterDesktopPluginRegistrarRef registrar) {
-    flutter_cash_drawer::OpenDrawerPlugin::RegisterWithRegistrar(
+    flutter_cash_drawer::FlutterCashDrawerPlugin::RegisterWithRegistrar(
       flutter::PluginRegistrarManager::GetInstance()
           ->GetRegistrar<flutter::PluginRegistrarWindows>(registrar));
 }

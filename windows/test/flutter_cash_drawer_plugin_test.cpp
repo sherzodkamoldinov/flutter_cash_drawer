@@ -22,8 +22,8 @@ using flutter::MethodResultFunctions;
 
 }  // namespace
 
-TEST(OpenDrawerPlugin, GetPlatformVersion) {
-  OpenDrawerPlugin plugin;
+TEST(FlutterCashDrawerPlugin, GetPlatformVersion) {
+  FlutterCashDrawerPlugin plugin;
   // Save the reply value from the success callback.
   std::string result_string;
   plugin.HandleMethodCall(

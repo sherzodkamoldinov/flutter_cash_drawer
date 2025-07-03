@@ -8,17 +8,17 @@
 
 namespace flutter_cash_drawer {
 
-class OpenDrawerPlugin : public flutter::Plugin {
+class FlutterCashDrawerPlugin : public flutter::Plugin {
  public:
   static void RegisterWithRegistrar(flutter::PluginRegistrarWindows *registrar);
 
-  OpenDrawerPlugin();
+  FlutterCashDrawerPlugin();
 
-  virtual ~OpenDrawerPlugin();
+  virtual ~FlutterCashDrawerPlugin();
 
   // Disallow copy and assign.
-  OpenDrawerPlugin(const OpenDrawerPlugin&) = delete;
-  OpenDrawerPlugin& operator=(const OpenDrawerPlugin&) = delete;
+  FlutterCashDrawerPlugin(const FlutterCashDrawerPlugin&) = delete;
+  FlutterCashDrawerPlugin& operator=(const FlutterCashDrawerPlugin&) = delete;
 
   // Called when a method is called on this plugin's channel from Dart.
   void HandleMethodCall(

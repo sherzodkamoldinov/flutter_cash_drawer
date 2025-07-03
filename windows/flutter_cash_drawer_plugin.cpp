@@ -15,14 +15,14 @@
 namespace flutter_cash_drawer {
 
 // Регистрация плагина
-    void OpenDrawerPlugin::RegisterWithRegistrar(
+    void FlutterCashDrawerPlugin::RegisterWithRegistrar(
             flutter::PluginRegistrarWindows* registrar) {
         auto channel =
                 std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
                         registrar->messenger(), "flutter_cash_drawer",
                                 &flutter::StandardMethodCodec::GetInstance());
 
-        auto plugin = std::make_unique<OpenDrawerPlugin>();
+        auto plugin = std::make_unique<FlutterCashDrawerPlugin>();
 
         channel->SetMethodCallHandler(
                 [plugin_pointer = plugin.get()](const auto& call, auto result) {
@@ -32,11 +32,11 @@ namespace flutter_cash_drawer {
         registrar->AddPlugin(std::move(plugin));
     }
 
-    OpenDrawerPlugin::OpenDrawerPlugin() {}
+    FlutterCashDrawerPlugin::FlutterCashDrawerPlugin() {}
 
-    OpenDrawerPlugin::~OpenDrawerPlugin() {}
+    FlutterCashDrawerPlugin::~FlutterCashDrawerPlugin() {}
 
-    void OpenDrawerPlugin::HandleMethodCall(
+    void FlutterCashDrawerPlugin::HandleMethodCall(
             const flutter::MethodCall<flutter::EncodableValue>& method_call,
             std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result) {
 

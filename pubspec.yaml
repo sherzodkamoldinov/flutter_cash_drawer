@@ -22,4 +22,4 @@ flutter:
   plugin:
     platforms:
       windows:
-        pluginClass: OpenDrawerPluginCApi
+        pluginClass: FlutterCashDrawerPluginCApi
