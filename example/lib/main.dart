@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   List<String> printerNameList = [];
   bool isLoading = false;
-  final _openDrawerPlugin = OpenDrawer();
+  final _openDrawerPlugin = FlutterCashDrawer();
 
   @override
   void initState() {
