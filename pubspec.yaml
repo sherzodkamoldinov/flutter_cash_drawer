@@ -1,7 +1,7 @@
 name: flutter_cash_drawer
 description: Плагин для открытия денежного ящика по USB через ESC-команду. Работает на Windows.
 version: 1.0.0
-repository: https://github.com/your_username/flutter_cash_drawer
+repository: https://github.com/sherzodkamoldinov/flutter_cash_drawer
 
 environment:
   sdk: ^3.6.1
