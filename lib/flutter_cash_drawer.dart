@@ -1,5 +1,5 @@
 
-import 'open_drawer_platform_interface.dart';
+import 'flutter_cash_drawer_platform_interface.dart';
 
 class OpenDrawer {
   Future<String?> openDrawer({required String printerName}) {

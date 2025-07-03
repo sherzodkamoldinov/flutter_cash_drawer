@@ -1,4 +1,4 @@
-#include "open_drawer_plugin.h"
+#include "flutter_cash_drawer_plugin.h"
 
 // Windows headers
 #include <windows.h>
@@ -12,14 +12,14 @@
 #include <memory>
 #include <string>
 
-namespace open_drawer {
+namespace flutter_cash_drawer {
 
 // Регистрация плагина
     void OpenDrawerPlugin::RegisterWithRegistrar(
             flutter::PluginRegistrarWindows* registrar) {
         auto channel =
                 std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-                        registrar->messenger(), "open_drawer",
+                        registrar->messenger(), "flutter_cash_drawer",
                                 &flutter::StandardMethodCodec::GetInstance());
 
         auto plugin = std::make_unique<OpenDrawerPlugin>();
@@ -42,6 +42,7 @@ namespace open_drawer {
 
 
         if (method_call.method_name().compare("open_drawer") == 0) {
+
             // 🔐 Безопасно получаем аргумент (имя принтера)
             const auto* arguments = std::get_if<std::string>(method_call.arguments());
             if (!arguments) {
@@ -49,6 +50,7 @@ namespace open_drawer {
                 return;
             }
             std::string printerName = *arguments;
+
 
             // 📦 Логика открытия денежного ящика
             HANDLE hPrinter;
@@ -75,7 +77,8 @@ namespace open_drawer {
             ClosePrinter(hPrinter);
 
             result->Success(flutter::EncodableValue("success"));
-        }  else  if (method_call.method_name().compare("get_printers") == 0) {
+        }
+        else  if (method_call.method_name().compare("get_printers") == 0) {
             DWORD needed = 0, returned = 0;
             EnumPrintersA(PRINTER_ENUM_LOCAL | PRINTER_ENUM_CONNECTIONS, NULL, 1, NULL, 0, &needed, &returned);
 
@@ -101,9 +104,6 @@ namespace open_drawer {
             result->Success(flutter::EncodableValue(printerNames));
             return;
         }
-
-
-
         else {
             result->NotImplemented();
         }

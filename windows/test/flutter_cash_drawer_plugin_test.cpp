@@ -8,9 +8,9 @@
 #include <string>
 #include <variant>
 
-#include "open_drawer_plugin.h"
+#include "flutter_cash_drawer_plugin.h"
 
-namespace open_drawer {
+namespace flutter_cash_drawer {
 namespace test {
 
 namespace {

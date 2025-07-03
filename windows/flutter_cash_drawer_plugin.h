@@ -6,7 +6,7 @@
 
 #include <memory>
 
-namespace open_drawer {
+namespace flutter_cash_drawer {
 
 class OpenDrawerPlugin : public flutter::Plugin {
  public:

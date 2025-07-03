@@ -1,6 +1,6 @@
-# open_drawer_example
+# flutter_cash_drawer_example
 
-Demonstrates how to use the open_drawer plugin.
+Demonstrates how to use the flutter_cash_drawer plugin.
 
 ## Getting Started
 

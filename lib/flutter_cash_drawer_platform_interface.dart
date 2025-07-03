@@ -1,6 +1,6 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-import 'open_drawer_method_channel.dart';
+import 'flutter_cash_drawer_method_channel.dart';
 
 abstract class OpenDrawerPlatform extends PlatformInterface {
   /// Constructs a OpenDrawerPlatform.

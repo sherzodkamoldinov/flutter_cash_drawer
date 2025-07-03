@@ -3,7 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  open_drawer
+  flutter_cash_drawer
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

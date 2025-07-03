@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'open_drawer_platform_interface.dart';
+import 'flutter_cash_drawer_platform_interface.dart';
 
 /// An implementation of [OpenDrawerPlatform] that uses method channels.
 class MethodChannelOpenDrawer extends OpenDrawerPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('open_drawer');
+  final methodChannel = const MethodChannel('flutter_cash_drawer');
 
   @override
   Future<String?> openDrawer({required String printerName}) async {

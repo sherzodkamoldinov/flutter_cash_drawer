@@ -1,4 +1,4 @@
-# open_drawer
+# flutter_cash_drawer
 
 for open drawer box with printer
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:open_drawer/open_drawer.dart';
+import 'package:flutter_cash_drawer/flutter_cash_drawer.dart';
 
 void main() {
   runApp(const MyApp());
