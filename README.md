@@ -89,8 +89,8 @@ MIT
 
 ## 📲 Обратная связь / Автор
 
-Автор: Sherzod aka
-GitHub: [github.com/sherzodaka](https://github.com/sherzodaka)
+Автор: Sherco
+GitHub: [github.com/sherzodkamoldinov](https://github.com/sherzodkamoldinov)
 
 ---
 
